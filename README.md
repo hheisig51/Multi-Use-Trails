@@ -28,7 +28,7 @@ This was the time period in-between our individual presentations, and when we pr
 
 ### Various Links
 
-| Title | Link |
+| Titles | Links |
 | ----- | ---- |
 | Weather bug | [Link](https://www.weatherbug.com/maps/charlottesville-va-22903?center=38.04113711201643,-78.48483745294784,12.763933570672668) |
 | Eco-counter _(data on multi-use trails)_ | [Link](https://eco-counter.com/) |
