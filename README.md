@@ -27,20 +27,18 @@ This was the time period between our individual presentations, and when we prese
 ## Research
 
 Multi-use trail data collection methods:
+
 - Camera
 - Surveys
-   - Can send them out for BKT at CHS
+  - Can send them out for BKT at CHS
 - Pressure sensor to detect people in/on the trail
 - Weather (?)
 
-
 ### Various Links
 
-| Titles | Links |
-| ----- | ---- |
-| Weather bug | [Link](https://www.weatherbug.com/maps/charlottesville-va-22903?center=38.04113711201643,-78.48483745294784,12.763933570672668) |
-| Eco-counter _(data on multi-use trails)_ | [Link](https://eco-counter.com/) |
-| Map of Triangle Trail | [Link](https://www.charlottesville.gov/DocumentCenter/View/3414/Triangle-Trails-Map-PDF) |
-| Example of similar project | [Link](https://www.railstotrails.org/build-trails/trail-building-toolbox/management-and-maintenance/trail-user-surveys-and-counting/) |
-
-
+| Titles                                   | Links                                                                                                                                 |
+| ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Weather bug                              | [Link](https://www.weatherbug.com/maps/charlottesville-va-22903?center=38.04113711201643,-78.48483745294784,12.763933570672668)       |
+| Eco-counter _(data on multi-use trails)_ | [Link](https://eco-counter.com/)                                                                                                      |
+| Map of Triangle Trail                    | [Link](https://www.charlottesville.gov/DocumentCenter/View/3414/Triangle-Trails-Map-PDF)                                              |
+| Example of similar project               | [Link](https://www.railstotrails.org/build-trails/trail-building-toolbox/management-and-maintenance/trail-user-surveys-and-counting/) |
