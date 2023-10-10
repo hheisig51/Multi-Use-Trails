@@ -18,13 +18,21 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 Weeks -3 through 0
 
-This was the time period in-between our individual presentations, and when we presented as a group.
+This was the time period between our individual presentations, and when we presented as a group.
 
 ### Previous Updates
 
 ---
 
 ## Research
+
+Multi-use trail data collection methods:
+- Camera
+- Surveys
+   - Can send them out for BKT at CHS
+- Pressure sensor to detect people in/on the trail
+- Weather (?)
+
 
 ### Various Links
 
