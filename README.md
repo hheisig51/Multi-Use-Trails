@@ -4,15 +4,21 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ## Table of Contents
 
-| Heading                               | Subheading(s)                                         |
-| ------------------------------------- | ----------------------------------------------------- |
-| [Progress Updates](#progress-updates) | [Most Recent Update](#most-recent-update)             |
-|                                       | [Previous Updates](#previous-updates)                 |
-| [Research](#research)                 | [2023-09-11 to 2023-10-06](#2023-09-11-to-2023-10-06) |
+| Heading                               | Subheading(s)                             |
+| ------------------------------------- | ----------------------------------------- |
+| [Progress Updates](#progress-updates) | [Most Recent Update](#most-recent-update) |
+|                                       | [Previous Updates](#previous-updates)     |
+| [Research](#research)                 |                                           |
 
 ## Progress Updates
 
 ### Most Recent Update
+
+#### 2023-09-11 to 2023-10-06
+
+Weeks -3 through 0
+
+This was the time period in between our individual presentations, and when we presented as a group.
 
 ### Previous Updates
 
@@ -20,8 +26,8 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ## Research
 
-### 2023-09-11 to 2023-10-06
+### Various Links
 
-Weeks -3 through 0
-
-This was the time period in between our individual presentations, and when we presented as a group.
+| Title | Link |
+| ----- | ---- |
+|       |      |
