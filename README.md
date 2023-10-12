@@ -18,8 +18,9 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
   <summary> 9/11/2023 to 10/6/2023 </summary>
   
 ```
+Weeks -3 through 0
 
-sdzjkfeakjgdawkh
+This was the time period between our individual presentations, and when we presented as a group.
 
 ```
 
@@ -29,15 +30,19 @@ sdzjkfeakjgdawkh
   <summary> 10/9/2023 to 10/13/2023 </summary>
   
 ```
-Weeks -3 through 0
 
-This was the time period between our individual presentations, and when we presented as a group.
+Possible sensors to use from mentors & customers:
+- Mobile eye tracking glasses (with video): this tracks eye-movements like fixations to understand attention better
+- Smartwatches: heart rate is mainly what we have tracked with this but I think it also can track other physiologic elements 
+- Light sensor: to track lighting levels in lux 
+- Air Quality sensor: we recently ordered an AirBeam monitor for a study so I am not super family with this yet but we should have it by next week
+- bike/ped counters
+
+
 ```
 
 </details>
 
-
-#### 10/12/2023
 
 
 ### Previous Updates
