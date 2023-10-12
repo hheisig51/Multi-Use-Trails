@@ -14,11 +14,31 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ### Most Recent Update
 
-#### 2023-09-11 to 2023-10-06
+<details>
+  <summary> 9/11/2023 to 10/6/2023 </summary>
+  
+```
 
+sdzjkfeakjgdawkh
+
+```
+
+</details>
+
+<details>
+  <summary> 10/9/2023 to 10/13/2023 </summary>
+  
+```
 Weeks -3 through 0
 
 This was the time period between our individual presentations, and when we presented as a group.
+```
+
+</details>
+
+
+#### 10/12/2023
+
 
 ### Previous Updates
 
