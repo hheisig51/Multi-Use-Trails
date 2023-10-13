@@ -55,9 +55,12 @@ Multi-use trail data collection methods:
 
 - Camera
 - Surveys
-  - Can send them out for BKT at CHS
-- Pressure sensor to detect people in/on the trail
 - Weather (?)
+- Mobile eye tracking glasses (with video): this tracks eye-movements like fixations to understand attention better
+- Smartwatches: heart rate is mainly what we have tracked with this but I think it also can track other physiologic elements 
+- Light sensor: to track lighting levels in lux 
+- Air Quality sensor: we recently ordered an AirBeam monitor for a study so I am not super family with this yet but we should have it by next week
+- bike/ped counters
 
 ### Various Links
 
