@@ -4,11 +4,11 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ## Table of Contents
 
-| Heading                               | 
-| ------------------------------------- |
-| [Progress Updates](#progress-updates) |
-| [Research](#research)                 |
-| [Various Links](#various-links)       |
+| Heading                               | Subheading(s)                             |
+| ------------------------------------- | ----------------------------------------- |
+| [Progress Updates](#progress-updates) | [Most Recent Update](#most-recent-update) |
+|                                       | [Previous Updates](#previous-updates)     |
+| [Research](#research)                 | [Various Links](#various-links)           |
 
 ---
 
@@ -16,46 +16,32 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ### Most Recent Update
 
-<details>
-  <summary> 10/9/2023 to 10/13/2023 </summary>
-  
-```
+#### 2023-10-07 to 2023-10-13
+
 This week we researched ways to gather data for the Triangle Trails.
-In addition to this, we emailed our mentors and customers to ask them what resources might be available to us. 
+In addition to this, we emailed our mentors and customers to ask them what resources might be available to us.
 
-Possible sensors to use from mentors & customers:
-- Mobile eye tracking glasses (with video): "this tracks eye-movements like fixations to understand attention better"
-- Smartwatches: "heart rate is mainly what we have tracked with this but I think it also can track other physiologic elements"
-- Light sensor: "to track lighting levels in lux"
-- Air Quality sensor: "we recently ordered an AirBeam monitor for a study so I am not super family with this yet but-
- we should have it by next week"
-- bike/ped counters
+UVA Link Lab (specifically, ORCL/Oracle Lab):
 
-The most recent list is under the 'Research' section of this Git Hub, it may change in the future.
-```
+- **Mobile eye-tracking glasses**: equipped with video, these track eye-movements to gather data on attention.
+- **Smartwatches**: largely used for monitoring heart rate, but should be able to track other physical quantities.
+- **Light sensor**: measures light levels in lux (lx). One lux is equal to one lumen per square meter.
+- **Air quality sensor**: AirBeam sensor, a handheld "instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature" ([HabitatMap.com](https://www.habitatmap.org/airbeam)).
 
-</details>
+City of Charlottesville Department of Transportation:
 
-
+- **Pyroelectric infrared sensor**: "Pyroelectric detectors are thermal detectors: Temperature fluctuations produce a charge change on the surface of pyroelectric crystals, which produces a corresponding electrical signal. This temperature gradient can be created by the absorption of light." ([LASERCOMPONENTS.com](https://www.lasercomponents.com/us/news/pyroelectric-detectors-materials-applications-and-working-principle/#:~:text=Pyroelectric%20detectors%20are%20thermal%20detectors,by%20the%20absorption%20of%20light.))
+- **Pneumatic tubes**: "Pneumatic road tube sensors send a burst of air pressure along a rubber tube when a vehicle's tires pass over the tube. The pressure pulse closes an air switch, producing an electrical signal that is transmitted to a counter or analysis software. The pneumatic road tube sensor is portable, using lead-acid, gel, or other rechargeable batteries as a power source." ([FHWA.dot.gov](https://www.fhwa.dot.gov/policyinformation/pubs/vdstits2007/04.cfm))
 
 ### Previous Updates
 
-<details>
-  <summary> Click to Open List </summary>
+#### 9/11/2023 to 10/6/2023
 
-  <details>
-    <summary> 9/11/2023 to 10/6/2023 </summary>
-    
-      Weeks -3 through 0
+Weeks -3 through 0
 
-      This was the time period between our individual presentations, and when we presented as a group.
-      
-  </details>
+This was the time period between our individual presentations, and when we presented as a group.
 
-    
-
-  
-</details>
+NEEDS TO BE UPDATED
 
 ---
 
@@ -65,22 +51,15 @@ Multi-use trail data collection methods:
 
 - Camera
 - Surveys
+  - Can send them out for BKT at CHS
+- Pressure sensor to detect people in/on the trail
 - Weather (?)
-- Mobile eye tracking glasses (with video): this tracks eye-movements like fixations to understand attention better
-- Smartwatches: heart rate is mainly what we have tracked with this but I think it also can track other physiologic elements 
-- Light sensor: to track lighting levels in lux 
-- Air Quality sensor: we recently ordered an AirBeam monitor for a study so I am not super family with this yet but we should have it by next week
-- bike/ped counters
-
----
 
 ### Various Links
 
 | Titles                                   | Links                                                                                                                                 |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Weather bug                              | [Link](https://www.weatherbug.com/maps/charlottesville-va-22903?center=38.04113711201643,-78.48483745294784,12.763933570672668)       |
-| Eco-counter _(data on multi-use trails)_ | [Link](https://eco-counter.com/)                                                                                                      |
-| Map of Triangle Trail                    | [Link](https://www.charlottesville.gov/DocumentCenter/View/3414/Triangle-Trails-Map-PDF)                                              |
-| Example of similar project               | [Link](https://www.railstotrails.org/build-trails/trail-building-toolbox/management-and-maintenance/trail-user-surveys-and-counting/) |
-
----
+| WeatherBug                               | [Link](https://www.weatherbug.com/maps/charlottesville-va-22903?center=38.04113711201643,-78.48483745294784,12.763933570672668)       |
+| Eco-Counter _(data on multi-use trails)_ | [Link](https://eco-counter.com/)                                                                                                      |
+| Map of Triangle Trails                   | [Link](https://www.charlottesville.gov/DocumentCenter/View/3414/Triangle-Trails-Map-PDF)                                              |
+| Example of a similar project             | [Link](https://www.railstotrails.org/build-trails/trail-building-toolbox/management-and-maintenance/trail-user-surveys-and-counting/) |
