@@ -4,27 +4,17 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ## Table of Contents
 
-| Heading                               | Subheading(s)                             |
-| ------------------------------------- | ----------------------------------------- |
-| [Progress Updates](#progress-updates) | [Most Recent Update](#most-recent-update) |
-|                                       | [Previous Updates](#previous-updates)     |
-| [Research](#research)                 |                                           |
+| Heading                               | 
+| ------------------------------------- |
+| [Progress Updates](#progress-updates) |
+| [Research](#research)                 |
+| [Various Links](#various-links)       |
+
+---
 
 ## Progress Updates
 
 ### Most Recent Update
-
-<details>
-  <summary> 9/11/2023 to 10/6/2023 </summary>
-  
-```
-Weeks -3 through 0
-
-This was the time period between our individual presentations, and when we presented as a group.
-
-```
-
-</details>
 
 <details>
   <summary> 10/9/2023 to 10/13/2023 </summary>
@@ -47,6 +37,26 @@ Possible sensors to use from mentors & customers:
 
 ### Previous Updates
 
+<details>
+  <summary> Click to Open List </summary>
+
+  <details>
+    <summary> 9/11/2023 to 10/6/2023 </summary>
+  
+      ```
+        Weeks -3 through 0
+
+        This was the time period between our individual presentations, and when we presented as a group.
+
+      ```
+
+  </details>
+
+    
+
+  
+</details>
+
 ---
 
 ## Research
@@ -62,6 +72,8 @@ Multi-use trail data collection methods:
 - Air Quality sensor: we recently ordered an AirBeam monitor for a study so I am not super family with this yet but we should have it by next week
 - bike/ped counters
 
+---
+
 ### Various Links
 
 | Titles                                   | Links                                                                                                                                 |
@@ -70,3 +82,5 @@ Multi-use trail data collection methods:
 | Eco-counter _(data on multi-use trails)_ | [Link](https://eco-counter.com/)                                                                                                      |
 | Map of Triangle Trail                    | [Link](https://www.charlottesville.gov/DocumentCenter/View/3414/Triangle-Trails-Map-PDF)                                              |
 | Example of similar project               | [Link](https://www.railstotrails.org/build-trails/trail-building-toolbox/management-and-maintenance/trail-user-surveys-and-counting/) |
+
+---
