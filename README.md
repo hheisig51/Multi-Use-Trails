@@ -16,14 +16,14 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ### Most Recent Update
 
-#### 2023-10-07 to 2023-10-13
+#### 7/10/2023 to 13/10/2023
 
 This week we researched ways to gather data for the Triangle Trails.
 In addition to this, we emailed our mentors and customers to ask them what resources might be available to us.
 
 UVA Link Lab (specifically, ORCL/Oracle Lab):
 
-- **Mobile eye-tracking glasses**: equipped with video, these track eye-movements to gather data on attention.
+- **Mobile eye-tracking glasses**: equipped with video, these track eye movements to gather data on attention.
 - **Smartwatches**: largely used for monitoring heart rate, but should be able to track other physical quantities.
 - **Light sensor**: measures light levels in lux (lx). One lux is equal to one lumen per square meter.
 - **Air quality sensor**: AirBeam sensor, a handheld "instrument that measures hyperlocal concentrations of harmful microscopic particles in the air, known as particulate matter, as well as humidity and temperature" ([HabitatMap.com](https://www.habitatmap.org/airbeam)).
@@ -37,11 +37,7 @@ City of Charlottesville Department of Transportation:
 
 #### 9/11/2023 to 10/6/2023
 
-Weeks -3 through 0
-
-This was the time period between our individual presentations, and when we presented as a group.
-
-NEEDS TO BE UPDATED
+This was the time period between our individual presentations, and when we presented as a group. 
 
 ---
 
