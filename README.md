@@ -16,6 +16,14 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ### Most Recent Update
 
+#### 2023-10-16 to 2023-10-20
+
+
+
+### Previous Updates
+
+
+
 #### 7/10/2023 to 13/10/2023
 
 This week we researched ways to gather data for the Triangle Trails.
@@ -32,8 +40,6 @@ City of Charlottesville Department of Transportation:
 
 - **Pyroelectric infrared sensor**: "Pyroelectric detectors are thermal detectors: Temperature fluctuations produce a charge change on the surface of pyroelectric crystals, which produces a corresponding electrical signal. This temperature gradient can be created by the absorption of light." ([LASERCOMPONENTS.com](https://www.lasercomponents.com/us/news/pyroelectric-detectors-materials-applications-and-working-principle/#:~:text=Pyroelectric%20detectors%20are%20thermal%20detectors,by%20the%20absorption%20of%20light.))
 - **Pneumatic tubes**: "Pneumatic road tube sensors send a burst of air pressure along a rubber tube when a vehicle's tires pass over the tube. The pressure pulse closes an air switch, producing an electrical signal that is transmitted to a counter or analysis software. The pneumatic road tube sensor is portable, using lead-acid, gel, or other rechargeable batteries as a power source." ([FHWA.dot.gov](https://www.fhwa.dot.gov/policyinformation/pubs/vdstits2007/04.cfm))
-
-### Previous Updates
 
 #### 9/11/2023 to 10/6/2023
 
