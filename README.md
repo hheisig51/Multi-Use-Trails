@@ -16,15 +16,13 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ### Most Recent Update
 
-#### 2023-10-16 to 2023-10-20
+#### 2023-10-16 to 2023-10-22
 
-
+We met with our mentors and our client, and determined that data collection will most likely occur starting January.
 
 ### Previous Updates
 
-
-
-#### 7/10/2023 to 13/10/2023
+#### 2023-10-07 to 2023-10-15
 
 This week we researched ways to gather data for the Triangle Trails.
 In addition to this, we emailed our mentors and customers to ask them what resources might be available to us.
@@ -43,7 +41,7 @@ City of Charlottesville Department of Transportation:
 
 #### 9/11/2023 to 10/6/2023
 
-This was the time period between our individual presentations, and when we presented as a group. 
+This was the time period between our individual presentations, and when we presented as a group.
 
 ---
 
