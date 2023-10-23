@@ -16,11 +16,15 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ### Most Recent Update
 
+#### 2023-10-23 to 2023-10-27:
+
+Nothing to note here yet.
+
+### Previous Updates
+
 #### 2023-10-16 to 2023-10-22:
 
 We met with our mentors and our client, and determined that data collection will most likely occur starting January. 
-
-### Previous Updates
 
 #### 2023-10-07 to 2023-10-15:
 
