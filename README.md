@@ -16,6 +16,13 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 
 ### Most Recent Update
 
+#### 2023-10-23 to 2023-10-27
+
+We've made a survey to find the biking needs at CHS and updated our customer. We have also begun a survey for walking needs at CHS. The plan is to finalize these surveys and send them out either next week or sometime soon.
+
+
+### Previous Updates
+
 #### 2023-10-16 to 2023-10-22
 
 We met with our mentors and our client (Mr. Thomas Safranek, the bike and pedestrian coordinator for the City of Charlottesville), and determined that data collection will most likely occur starting January.
@@ -24,8 +31,6 @@ He helped us identify two spots to place sensors:
 
 - One that we had already planned on, the bridge/asphalt path between CHS and the YMCA.
 - The other is the unofficial path between CHS and the Meadowcreek Parkway. We would place the sensor on city property, measuring how many walk across the private property to get there.
-
-### Previous Updates
 
 #### 2023-10-07 to 2023-10-15
 
