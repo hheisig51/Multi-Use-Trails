@@ -13,6 +13,7 @@ A Capstone Engineering project about collecting data on pedestrian traffic and o
 | November                              |
 | ------------------------------------- |
 | [2023-W45](/_posts/2023-11-06-W45.md) |
+| [2023-W46](/_posts/2023-11-13-W46.md) |
 
 | October                               |
 | ------------------------------------- |
