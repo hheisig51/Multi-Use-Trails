@@ -1,0 +1,15 @@
+# Points of data for Walking
+
+- 28.8% of respondents said they walk to school, 9.4% saying they don't but want to.
+- Distance and time are the biggest barriers for walking.
+- 54.7% said CHS would benefit from a route map, 37.7% saying CHS would not benefit from one.
+
+- There are specific things to note about the "Is there anything else CHS or the city can do to make your walk to school easier or safer?" question:
+
+  - "Yes, they need a walk light at the Rugby Ave @ Rose Hill Dr intersection. Its quite chaotic and comparable to all other intersections with this feature."
+  - "We need a crossing [guard] for CHS especially during dismissal. I cannot say how many times I have almost gotten hit because people are speeding through and not respecting pedestrians."
+  - "https://chsktr.com/6100/chs-news/student-carline-safe-or-safety-hazzard/"
+  - "make a [cross-walk] down at the bottom of the [CHS] hill"
+  - "...more sidewalks" (x2)
+
+- Responding to the "Do you have any additional comments?" question, one person said the following: "We don't need to make walking better, just work extensively on public transportation in the city and all of our transit issues will be solved."
