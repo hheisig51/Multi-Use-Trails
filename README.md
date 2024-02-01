@@ -14,9 +14,16 @@ The website for this project is located at [https://hheisig51.github.io/Multi-Us
 
 ### Updates
 
+| December                              |
+| ------------------------------------- |
+| [2023-W49](/_posts/2023-12-04-W49.md) |
+
 | November                              |
 | ------------------------------------- |
 | [2023-W45](/_posts/2023-11-06-W45.md) |
+| [2023-W46](/_posts/2023-11-13-W46.md) |
+| [2023-W47](/_posts/2023-11-20-W47.md) |
+| [2023-W48](/_posts/2023-11-27-W48.md) |
 
 | October                               |
 | ------------------------------------- |
@@ -24,11 +31,6 @@ The website for this project is located at [https://hheisig51.github.io/Multi-Us
 | [2023-W42](/_posts/2023-10-16-W42.md) |
 | [2023-W43](/_posts/2023-10-23-W43.md) |
 | [2023-W44](/_posts/2023-10-30-W44.md) |
-| [2023-W45](/_posts/2023-11-06-W45.md) |
-| [2023-W46](/_posts/2023-11-13-W46.md) |
-| [2023-W47](/_posts/2023-11-20-W47.md) |
-| [2023-W48](/_posts/2023-11-27-W48.md) |
-| [2023-W49](/_posts/2023-12-04-W49.md) |
 
 | September                                     |
 | --------------------------------------------- |
