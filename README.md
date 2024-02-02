@@ -8,9 +8,10 @@ The website for this project is located at [https://hheisig51.github.io/Multi-Us
 
 ## Table of Contents
 
-| Permanent                            |
-| ------------------------------------ |
-| [Links](/_posts/2024-04-20-Links.md) |
+| Miscellaneous                                              |
+| ---------------------------------------------------------- |
+| [Links](/_posts/2024-04-20-Links.md)                       |
+| [Survey Responses](/_posts/2023-12-11-Survey-Responses.md) |
 
 ### Updates
 
@@ -35,3 +36,5 @@ The website for this project is located at [https://hheisig51.github.io/Multi-Us
 | September                                     |
 | --------------------------------------------- |
 | [2023-W37--40](/_posts/2023-09-11-W37--40.md) |
+
+<a target="_blank" href="https://icons8.com/icon/uhX1VI4OLRLx/path">Path</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
