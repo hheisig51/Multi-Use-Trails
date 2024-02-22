@@ -15,6 +15,10 @@ The website for this project is located at [https://hheisig51.github.io/Multi-Us
 
 ### Updates
 
+| January                               |
+| ------------------------------------- |
+| [2024-W05](/_posts/2024-01-29-W05.md) |
+
 | December                              |
 | ------------------------------------- |
 | [2023-W49](/_posts/2023-12-04-W49.md) |
@@ -36,5 +40,3 @@ The website for this project is located at [https://hheisig51.github.io/Multi-Us
 | September                                     |
 | --------------------------------------------- |
 | [2023-W37--40](/_posts/2023-09-11-W37--40.md) |
-
-<a target="_blank" href="https://icons8.com/icon/uhX1VI4OLRLx/path">Path</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
