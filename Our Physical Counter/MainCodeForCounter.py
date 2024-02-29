@@ -1,6 +1,4 @@
 ## Notes: Using CircuitPython and Rasberry-Pi-Pico.
-## Most accurate to ~55cm, past that doesn't seem accurate.
-
 ## Note 2/26/2024: try using a hotspot opposed to using the LoRa wifi stuff
 
 import time #type:ignore
@@ -10,24 +8,34 @@ import busio  # type: ignore
 import digitalio  # type: ignore
 from digitalio import DigitalInOut # type: ignore
 
+### - Sensor - ###
 debounce_Sensor = False
 countValue = 0
 sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.GP14, echo_pin=board.GP15)
+## Most accurate to ~55cm, past that doesn't seem accurate.
 
-from CircuitPython_LCDFolder.lcd.lcd import LCD, CursorMode  # type: ignore
-from CircuitPython_LCDFolder.lcd.i2c_pcf8574_interface import I2CPCF8574Interface  # type: ignore
+######
+
+### - LCD - ###
+from CircuitPython_LCD.lcd.lcd import LCD, CursorMode  # type: ignore
+from CircuitPython_LCD.lcd.i2c_pcf8574_interface import I2CPCF8574Interface  # type: ignore
+# https://github.com/dhalbert/CircuitPython_LCD
+# when downloading, the name of the folder was "CircuitPython_LCD-main", change that name of the folder and make sure it matches the above name.
+
 # http://www.penguintutor.com/electronics/pico-lcd 
-# Make sure to have at least 5v. Pico only gives 3 volts. use battery back.
-# declare the singleton variable for the default I2C bus:
+# Make sure to have at least 5v for LCD. Use battery pack or use VBUS. Note: VBUS has no volts when the pico's USB is unplugged.
 
-i2c_address = 0x3f
-cols = 16
-rows = 2
-i2c_bus_0 = busio.I2C(board.GP15, board.GP14) # 1 rn
+i2c_address = 0x27 # check the i2c address of your specific device
+i2c_bus_0 = busio.I2C(board.GP11, board.GP10) # make sure to check (SLC, SCA)
 interface = I2CPCF8574Interface(i2c_bus_0, i2c_address)
-lcd = LCD(interface, num_rows=rows, num_cols=cols)
+lcd = LCD(interface, num_rows=2, num_cols=16) # change the num based on that LCD's rows and cols
 
-resetButton = digitalio.DigitalInOut(board.GP10) # Button stuff
+# lcd.clear() # do this each time you want to write something new on the LCD, if you don't text will overlap
+# lcd.print("Here I am")
+######
+
+
+resetButton = digitalio.DigitalInOut(board.GP16) # Button stuff
 resetButton.direction = digitalio.Direction.INPUT
 resetButton.pull = digitalio.Pull.UP 
 resetButtonWasPressed = False
@@ -52,7 +60,11 @@ while True:
                 ##print("took input")
                 debounce_Sensor = True
                 countValue += 1
-                print(countValue)
+                countValueAsString = str(countValue)
+
+                print(countValueAsString)
+                lcd.clear()
+                lcd.print(countValueAsString)
 
     except RuntimeError:
         ##print("Retrying!")
@@ -60,4 +72,3 @@ while True:
             debounce_Sensor = False
         pass
     time.sleep(0.1)
-
