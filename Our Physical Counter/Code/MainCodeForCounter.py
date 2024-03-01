@@ -43,12 +43,18 @@ resetButtonWasPressed = False
 
 while True:
 
-    if resetButton.value == False and resetButtonWasPressed == False:
-       resetButtonWasPressed = False
-       print("Test 1 button")
-    if resetButton.value == True and resetButtonWasPressed == True:
-       resetButtonWasPressed = True #backward logic, true = false
-       print("Test 2 button")
+    if resetButton.value == False:
+        if resetButtonWasPressed == False:
+            resetButtonWasPressed = True
+            print("Test button 1")
+            countValue = 0
+            countValueAsString = str(countValue)
+            lcd.clear()
+            lcd.print(countValueAsString)
+    elif resetButton.value == True:
+        if resetButtonWasPressed == True:
+            resetButtonWasPressed = False
+            ## print("Test button 2")
 
     try:
         distanceFromSensor = sonar.distance
