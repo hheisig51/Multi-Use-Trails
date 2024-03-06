@@ -15,6 +15,11 @@ The website for this project is located at [https://hheisig51.github.io/Multi-Us
 
 ### Updates
 
+| February                             |
+| ------------------------------------ |
+| [2024-W07](/posts/2024-02-12-W07.md) |
+| [2024-W09](/posts/2024-02-26-W09.md) |
+
 | January                               |
 | ------------------------------------- |
 | [2024-W05](/_posts/2024-01-29-W05.md) |
