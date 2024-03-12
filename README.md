@@ -2,10 +2,6 @@
 
 A Capstone Engineering project about collecting data on pedestrian traffic and opinions of the Triangle Trails, a multi-use trail next to Charlottesville High School. Created by Logan Martin and Emma Heisig, Charlottesville High School Class of 2024 Students.
 
-## Website
-
-The website for this project is located at [https://hheisig51.github.io/Multi-Use-Trails/](https://hheisig51.github.io/Multi-Use-Trails/).
-
 ## Table of Contents
 
 | Miscellaneous                                              |
