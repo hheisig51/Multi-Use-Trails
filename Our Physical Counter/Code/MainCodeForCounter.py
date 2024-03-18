@@ -55,7 +55,7 @@ while True:
             countValueAsString = str(countValue)
             lcd.clear()
             lcd.print("Sensor count: " + countValueAsString)
-            
+
     elif resetButton.value == True:
         if resetButtonWasPressed == True:
             resetButtonWasPressed = False
@@ -64,7 +64,7 @@ while True:
     try:
         ##print(sonar)
         distanceFromSensor = sonar.distance
-        print((distanceFromSensor))
+        ##print((distanceFromSensor))
 
         if distanceFromSensor >= 5 and distanceFromSensor <= 50 : ## This is the range we want to collect data from
            ## print("mid range, add to count")
@@ -74,7 +74,7 @@ while True:
                 countValue += 1
                 countValueAsString = str(countValue)
 
-                print(countValueAsString)
+                ## print(countValueAsString)
                 lcd.clear()
                 lcd.print("Sensor count: " + countValueAsString)
 
@@ -83,4 +83,4 @@ while True:
         if debounce_Sensor == True:
             debounce_Sensor = False
         pass
-    time.sleep(0.1)
+    time.sleep(0.02)
