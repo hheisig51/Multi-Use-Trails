@@ -171,7 +171,7 @@
     &#{$infix} {
       @include media-breakpoint-down($breakpoint) {
         display: block;
-        width: 100%;
+        width: 200%;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
 
