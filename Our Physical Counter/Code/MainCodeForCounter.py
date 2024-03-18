@@ -41,24 +41,30 @@ resetButton.pull = digitalio.Pull.UP
 resetButtonWasPressed = False
 
 
+lcd.clear()
+
+lcd.print("Sensor count: " + str(countValue))
+
 while True:
 
     if resetButton.value == False:
         if resetButtonWasPressed == False:
             resetButtonWasPressed = True
-            print("Test button 1")
+            ##print("Test button 1")
             countValue = 0
             countValueAsString = str(countValue)
             lcd.clear()
-            lcd.print(countValueAsString)
+            lcd.print("Sensor count: " + countValueAsString)
+            
     elif resetButton.value == True:
         if resetButtonWasPressed == True:
             resetButtonWasPressed = False
             ## print("Test button 2")
 
     try:
+        ##print(sonar)
         distanceFromSensor = sonar.distance
-        ##print((distanceFromSensor,))
+        print((distanceFromSensor))
 
         if distanceFromSensor >= 5 and distanceFromSensor <= 50 : ## This is the range we want to collect data from
            ## print("mid range, add to count")
@@ -70,7 +76,7 @@ while True:
 
                 print(countValueAsString)
                 lcd.clear()
-                lcd.print(countValueAsString)
+                lcd.print("Sensor count: " + countValueAsString)
 
     except RuntimeError:
         ##print("Retrying!")
