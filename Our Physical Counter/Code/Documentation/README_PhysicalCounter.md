@@ -1,3 +1,5 @@
+<img src="https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/c9510029-bf4e-48e2-b448-e285bddba955" width="400" height="400">
+
 ### 3/19/2024
 
 We decided to make a physical counter of our own to better understand how they work. In short, a counter for data collection should involve a sensor, a way to power the device overall, a way to collect and/or display the data, and a way to reset the data on the counter. 
