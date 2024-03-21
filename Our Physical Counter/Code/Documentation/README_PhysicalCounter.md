@@ -19,10 +19,9 @@ Link to Code:
 
 Wiring Diagram:
 
-![image](https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/ef41d745-08f2-44da-bb5d-06930be7f529)
-
+<img src="https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/ef41d745-08f2-44da-bb5d-06930be7f529" width="655" height="362">
 
 Pico Pinouts:
 
-![image](https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/e9c71b26-78bb-44f9-b2a1-392d663888fc)
+<img src="https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/e9c71b26-78bb-44f9-b2a1-392d663888fc" width="550" height="500">
 
