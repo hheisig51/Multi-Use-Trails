@@ -7,14 +7,13 @@ import adafruit_hcsr04 #type:ignore
 import busio  # type: ignore
 import digitalio  # type: ignore
 from digitalio import DigitalInOut # type: ignore
+import storage # type: ignore
 
 ### - Sensor - ###
 debounce_Sensor = False
 countValue = 0
 sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.GP14, echo_pin=board.GP15)
 ## Most accurate to ~55cm, past that doesn't seem accurate.
-
-######
 
 ### - LCD - ###
 from CircuitPython_LCD.lcd.lcd import LCD, CursorMode  # type: ignore
@@ -66,7 +65,7 @@ while True:
         distanceFromSensor = sonar.distance
         ##print((distanceFromSensor))
 
-        if distanceFromSensor >= 5 and distanceFromSensor <= 50 : ## This is the range we want to collect data from
+        if distanceFromSensor >= 5 and distanceFromSensor <= 66 : ## This is the range we want to collect data from
            ## print("mid range, add to count")
             if debounce_Sensor == False:
                 ##print("took input")
