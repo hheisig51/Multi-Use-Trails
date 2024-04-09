@@ -12,7 +12,6 @@ import time #type:ignore
 ## The code.py script/module:
 import code #type:ignore
 
-
 # For Gemma M0, Trinket M0, Metro M0/M4 Express, ItsyBitsy M0/M4 Express
 switch = digitalio.DigitalInOut(board.GP0)
 
@@ -21,6 +20,8 @@ switch.pull = digitalio.Pull.UP
 
 # If the switch pin is connected to ground CircuitPython can write to the drive
 storage.remount("/", readonly=switch.value)
+
+print("test A")
 
 try:
     with open("/dataCollected.txt", "a") as fp:
@@ -35,4 +36,10 @@ except OSError as e:  # Typically when the filesystem isn't writeable...
         delay = 0.25  # ...blink the LED faster!
     while True:
         time.sleep(delay)
+        print("test B")
+        if switch.value == True:
+            print("switch, True")
+        
+        if switch.value == False:
+            print("switch, False")
 
