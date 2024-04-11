@@ -16,8 +16,8 @@ sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.GP14, echo_pin=board.GP15)
 ## Most accurate to ~55cm, past that doesn't seem accurate.
 
 ### - LCD - ###
-from CircuitPython_LCD.lcd.lcd import LCD, CursorMode  # type: ignore
-from CircuitPython_LCD.lcd.i2c_pcf8574_interface import I2CPCF8574Interface  # type: ignore
+from CircuitPython_LCD-main.lcd.lcd import LCD, CursorMode  # type: ignore
+from CircuitPython_LCD-main.lcd.i2c_pcf8574_interface import I2CPCF8574Interface  # type: ignore
 # https://github.com/dhalbert/CircuitPython_LCD
 # when downloading, the name of the folder was "CircuitPython_LCD-main", change that name of the folder and make sure it matches the above name.
 
