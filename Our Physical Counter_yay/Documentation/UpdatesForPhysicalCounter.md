@@ -12,4 +12,5 @@ List of Additional Updates for the Physical Counter we made.
 Week of 4/8/2024:
 - This week I'm learning about about storage on the Pico. Getting data to save seems to be quite complicated, more than I thought it'd be.
      - [https://learn.adafruit.com/circuitpython-essentials/circuitpython-storage](https://learn.adafruit.com/circuitpython-essentials/circuitpython-storage)
+- Last class I broke the pico trying to write to a file. So, this class (4/11/2024), I fixed the pico with help from Emma and Mr. Miller. I've made a Code folder, Lib folder, and have added other files to this in case anything else happens. If something happens, it should no longer take an entire class period to fix it.
 - 
