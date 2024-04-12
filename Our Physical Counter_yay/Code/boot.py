@@ -1,3 +1,16 @@
+import busio  # type: ignore
+from CircuitPython_LCD.lcd.lcd import LCD, CursorMode  # type: ignore
+from CircuitPython_LCD.lcd.i2c_pcf8574_interface import I2CPCF8574Interface  # type: ignore
+i2c_address = 0x27 # check the i2c address of your specific device
+i2c_bus_0 = busio.I2C(board.GP11, board.GP10) # make sure to check (SLC, SCA)
+interface = I2CPCF8574Interface(i2c_bus_0, i2c_address)
+lcd = LCD(interface, num_rows=2, num_cols=16) # change the num based on that LCD's rows and cols
+lcd.clear()
+lcd.print("boot.py running!")
+print("boot.py is running!")
+
+
+
 # SPDX-FileCopyrightText: 2017 Limor Fried for Adafruit Industries
 # SPDX-License-Identifier: MIT
 
