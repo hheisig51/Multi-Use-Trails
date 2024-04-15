@@ -37,12 +37,21 @@ storage.remount("/", readonly=switch.value)
 print("test A")
 
 try:
-    with open("/dataCollected.txt", "a") as fp:
+   with open("/data.csv", "a") as datalog:
         while True:
-            countToSend = code.countValue
-            fp.write('{0:f}\n'.format(countToSend))
-            fp.flush()
             time.sleep(1)
+
+            time_elapsed = time.monotonic()
+            countToSend = code.countValue
+
+            all_data_to_send =  f“{time_elapsed},{countToSend}\n”
+            
+            datalog.write(all_data_to_send)
+            datalog.flush()
+
+            lcd.clear()
+            lcd.print(".csv file updated with data!")
+
 except OSError as e:  # Typically when the filesystem isn't writeable...
     delay = 0.5  # ...blink the LED every half second.
     if e.args[0] == 28:  # If the file system is full...
