@@ -10,6 +10,7 @@ lcd.print("boot.py running!")
 print("boot.py is running!")
 
 
+## Guide: https://docs.google.com/document/d/1RtqWXy4P9aIcJqrYk6g71_IP663rZxrHkY_nHGh0bgs/edit
 
 # SPDX-FileCopyrightText: 2017 Limor Fried for Adafruit Industries
 # SPDX-License-Identifier: MIT
