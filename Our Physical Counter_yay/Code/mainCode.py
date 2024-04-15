@@ -16,8 +16,8 @@ sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.GP14, echo_pin=board.GP15)
 ## Most accurate to ~55cm, past that doesn't seem accurate.
 
 ### - LCD - ###
-from CircuitPython_LCD-main.lcd.lcd import LCD, CursorMode  # type: ignore
-from CircuitPython_LCD-main.lcd.i2c_pcf8574_interface import I2CPCF8574Interface  # type: ignore
+from CircuitPython_LCD.lcd.lcd import LCD, CursorMode  # type: ignore
+from CircuitPython_LCD.lcd.i2c_pcf8574_interface import I2CPCF8574Interface  # type: ignore
 # https://github.com/dhalbert/CircuitPython_LCD
 # when downloading, the name of the folder was "CircuitPython_LCD-main", change that name of the folder and make sure it matches the above name.
 
@@ -40,9 +40,24 @@ resetButton.pull = digitalio.Pull.UP
 resetButtonWasPressed = False
 
 
-lcd.clear()
+switch = digitalio.DigitalInOut(board.GP0)
+switch.direction = digitalio.Direction.INPUT
+switch.pull = digitalio.Pull.UP
 
-lcd.print("Sensor count: " + str(countValue))
+# If write pin is connected to ground on start-up, CircuitPython can write to CIRCUITPY filesystem.
+if not switch.value: # Data Mode, shown by 10 short blinks
+    storage.remount("/", readonly=False)
+    lcd.clear()
+    lcd.print("Data Mode!")
+
+else: # Code Mode, shown by three long blinks
+    lcd.clear()
+    lcd.print("Code Mode!")
+
+
+##lcd.clear()
+##lcd.print("Sensor count: " + str(countValue))
+print("code.py is running!")
 
 while True:
 
@@ -74,8 +89,8 @@ while True:
                 countValueAsString = str(countValue)
 
                 ## print(countValueAsString)
-                lcd.clear()
-                lcd.print("Sensor count: " + countValueAsString)
+                #lcd.clear()
+                #lcd.print("Sensor count: " + countValueAsString)
 
     except RuntimeError:
         ##print("Retrying!")
