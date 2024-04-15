@@ -43,10 +43,8 @@ try:
 
             time_elapsed = time.monotonic()
             countToSend = code.countValue
-
-            all_data_to_send =  f“{time_elapsed},{countToSend}\n”
             
-            datalog.write(all_data_to_send)
+            datalog.write( f“{time_elapsed},{countToSend}\n”)
             datalog.flush()
 
             lcd.clear()
