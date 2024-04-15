@@ -17,4 +17,5 @@ Week of 4/8/2024:
 
 Week of 4/15/2024:
 - Monday: I've gotten data mode and code mode switching to work. The issue now is getting the pico's drive to show up when being plugged in/booted. The solution to this seems to be flash_nuking the pico, reinstalling the .uf2 file, and putting back in code & library files.
+   - Notes: counter should only be able to count data in data mode. Confirm the counter is in dataMode when collecting data.  
 - 
