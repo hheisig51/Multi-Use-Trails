@@ -44,22 +44,20 @@ switch = digitalio.DigitalInOut(board.GP0)
 switch.direction = digitalio.Direction.INPUT
 switch.pull = digitalio.Pull.UP
 
-# If write pin is connected to ground on start-up, CircuitPython can write to CIRCUITPY filesystem.
-if not switch.value: # Data Mode, shown by 10 short blinks
-    storage.remount("/", readonly=False)
-    lcd.clear()
-    lcd.print("Data Mode!")
+checkWhatModeLED = digitalio.DigitalInOut(board.GP5)
+checkWhatModeLED.direction = digitalio.Direction.OUTPUT
+checkWhatModeLED.value = True
+   
+time.sleep(4)
 
-else: # Code Mode, shown by three long blinks
-    lcd.clear()
-    lcd.print("Code Mode!")
-
-
-##lcd.clear()
-##lcd.print("Sensor count: " + str(countValue))
+#lcd.clear()
+#lcd.print("Sensor count: " + str(countValue))
 print("code.py is running!")
 
 while True:
+
+    ##print(switch.value)
+    print(checkWhatModeLED.value)
 
     if resetButton.value == False:
         if resetButtonWasPressed == False:
@@ -67,13 +65,14 @@ while True:
             ##print("Test button 1")
             countValue = 0
             countValueAsString = str(countValue)
-            lcd.clear()
-            lcd.print("Sensor count: " + countValueAsString)
+            #lcd.clear()
+            #lcd.print("Sensor count: " + countValueAsString)
 
     elif resetButton.value == True:
         if resetButtonWasPressed == True:
             resetButtonWasPressed = False
             ## print("Test button 2")
+
 
     try:
         ##print(sonar)
