@@ -44,10 +44,6 @@ switch = digitalio.DigitalInOut(board.GP0)
 switch.direction = digitalio.Direction.INPUT
 switch.pull = digitalio.Pull.UP
 
-checkWhatModeLED = digitalio.DigitalInOut(board.GP5)
-checkWhatModeLED.direction = digitalio.Direction.OUTPUT
-checkWhatModeLED.value = True
-   
 time.sleep(4)
 
 #lcd.clear()
@@ -57,7 +53,6 @@ print("code.py is running!")
 while True:
 
     ##print(switch.value)
-    print(checkWhatModeLED.value)
 
     if resetButton.value == False:
         if resetButtonWasPressed == False:
@@ -72,7 +67,6 @@ while True:
         if resetButtonWasPressed == True:
             resetButtonWasPressed = False
             ## print("Test button 2")
-
 
     try:
         ##print(sonar)
@@ -90,6 +84,20 @@ while True:
                 ## print(countValueAsString)
                 #lcd.clear()
                 #lcd.print("Sensor count: " + countValueAsString)
+
+                
+                try:
+                    with open("/data.csv", "a") as datalog:
+                        time.sleep(1)
+
+                        time_elapsed = time.monotonic()
+                        countToSend = code.countValue
+                            
+                        datalog.write( f“{time_elapsed},{countToSend}\n”)
+                        datalog.flush()
+                        
+                        print("wrote to file!")
+
 
     except RuntimeError:
         ##print("Retrying!")
