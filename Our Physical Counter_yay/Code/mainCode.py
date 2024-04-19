@@ -46,8 +46,8 @@ switch.pull = digitalio.Pull.UP
 
 time.sleep(4)
 
-#lcd.clear()
-#lcd.print("Sensor count: " + str(countValue))
+lcd.clear()
+lcd.print("Sensor count: " + str(countValue))
 print("code.py is running!")
 
 while True:
@@ -60,8 +60,8 @@ while True:
             ##print("Test button 1")
             countValue = 0
             countValueAsString = str(countValue)
-            #lcd.clear()
-            #lcd.print("Sensor count: " + countValueAsString)
+            lcd.clear()
+            lcd.print("Sensor count: " + countValueAsString)
 
     elif resetButton.value == True:
         if resetButtonWasPressed == True:
@@ -82,22 +82,21 @@ while True:
                 countValueAsString = str(countValue)
 
                 ## print(countValueAsString)
-                #lcd.clear()
-                #lcd.print("Sensor count: " + countValueAsString)
+                lcd.clear()
+                lcd.print("Sensor count: " + countValueAsString)
 
-                
                 try:
                     with open("/data.csv", "a") as datalog:
                         time.sleep(1)
 
                         time_elapsed = time.monotonic()
                         countToSend = code.countValue
-                            
-                        datalog.write( f“{time_elapsed},{countToSend}\n”)
+                        datalog.write(f"{time_elapsed},{countToSend}\n")
                         datalog.flush()
                         
                         print("wrote to file!")
-
+                except:
+                    print("wowowow")
 
     except RuntimeError:
         ##print("Retrying!")
