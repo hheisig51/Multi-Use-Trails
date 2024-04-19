@@ -1,65 +1,108 @@
+## Notes: Using CircuitPython and Rasberry-Pi-Pico.
+## Note 2/26/2024: try using a hotspot opposed to using the LoRa wifi stuff
+
+import time #type:ignore
+import board #type:ignore
+import adafruit_hcsr04 #type:ignore
 import busio  # type: ignore
+import digitalio  # type: ignore
+from digitalio import DigitalInOut # type: ignore
+import storage # type: ignore
+
+### - Sensor - ###
+debounce_Sensor = False
+countValue = 0
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.GP14, echo_pin=board.GP15)
+## Most accurate to ~55cm, past that doesn't seem accurate.
+
+### - LCD - ###
 from CircuitPython_LCD.lcd.lcd import LCD, CursorMode  # type: ignore
 from CircuitPython_LCD.lcd.i2c_pcf8574_interface import I2CPCF8574Interface  # type: ignore
+# https://github.com/dhalbert/CircuitPython_LCD
+# when downloading, the name of the folder was "CircuitPython_LCD-main", change that name of the folder and make sure it matches the above name.
+
+# http://www.penguintutor.com/electronics/pico-lcd 
+# Make sure to have at least 5v for LCD. Use battery pack or use VBUS. Note: VBUS has no volts when the pico's USB is unplugged.
+
 i2c_address = 0x27 # check the i2c address of your specific device
 i2c_bus_0 = busio.I2C(board.GP11, board.GP10) # make sure to check (SLC, SCA)
 interface = I2CPCF8574Interface(i2c_bus_0, i2c_address)
 lcd = LCD(interface, num_rows=2, num_cols=16) # change the num based on that LCD's rows and cols
-lcd.clear()
-lcd.print("boot.py running!")
-print("boot.py is running!")
+
+# lcd.clear() # do this each time you want to write something new on the LCD, if you don't text will overlap
+# lcd.print("Here I am")
+######
 
 
-## Guide: https://docs.google.com/document/d/1RtqWXy4P9aIcJqrYk6g71_IP663rZxrHkY_nHGh0bgs/edit
+resetButton = digitalio.DigitalInOut(board.GP16) # Button stuff
+resetButton.direction = digitalio.Direction.INPUT
+resetButton.pull = digitalio.Pull.UP 
+resetButtonWasPressed = False
 
-# SPDX-FileCopyrightText: 2017 Limor Fried for Adafruit Industries
-# SPDX-License-Identifier: MIT
 
-## Note: boot.py only runs on first boot of the device, not if you re-load the serial console with ctrl+D or if you save a file. You must EJECT the USB drive, then physically press the reset button!
-
-"""CircuitPython Essentials Storage logging boot.py file"""
-import board #type:ignore
-import digitalio #type:ignore
-import storage #type:ignore
-import time #type:ignore
-
-## The code.py script/module:
-import code #type:ignore
-
-# For Gemma M0, Trinket M0, Metro M0/M4 Express, ItsyBitsy M0/M4 Express
 switch = digitalio.DigitalInOut(board.GP0)
-
 switch.direction = digitalio.Direction.INPUT
 switch.pull = digitalio.Pull.UP
 
-# If the switch pin is connected to ground CircuitPython can write to the drive
-storage.remount("/", readonly=switch.value)
+time.sleep(4)
 
-print("test A")
+#lcd.clear()
+#lcd.print("Sensor count: " + str(countValue))
+print("code.py is running!")
 
-try:
-   with open("/data.csv", "a") as datalog:
-        while True:
-            time.sleep(1)
+while True:
 
-            time_elapsed = time.monotonic()
-            countToSend = code.countValue
-            
-            datalog.write( f“{time_elapsed},{countToSend}\n”)
-            datalog.flush()
+    ##print(switch.value)
 
-            lcd.clear()
-            lcd.print(".csv file updated with data!")
+    if resetButton.value == False:
+        if resetButtonWasPressed == False:
+            resetButtonWasPressed = True
+            ##print("Test button 1")
+            countValue = 0
+            countValueAsString = str(countValue)
+            #lcd.clear()
+            #lcd.print("Sensor count: " + countValueAsString)
 
-except OSError as e:  # Typically when the filesystem isn't writeable...
-    delay = 0.5  # ...blink the LED every half second.
-    if e.args[0] == 28:  # If the file system is full...
-        delay = 0.25  # ...blink the LED faster!
-    while True:
-        time.sleep(delay)
-        print("test B")
-        if switch.value == True:
-            print("switch, True")
-        
-        if switch.value == False:
-            print("switch, False")
+    elif resetButton.value == True:
+        if resetButtonWasPressed == True:
+            resetButtonWasPressed = False
+            ## print("Test button 2")
+
+    try:
+        ##print(sonar)
+        distanceFromSensor = sonar.distance
+        ##print((distanceFromSensor))
+
+        if distanceFromSensor >= 5 and distanceFromSensor <= 66 : ## This is the range we want to collect data from
+           ## print("mid range, add to count")
+            if debounce_Sensor == False:
+                ##print("took input")
+                debounce_Sensor = True
+                countValue += 1
+                countValueAsString = str(countValue)
+
+                ## print(countValueAsString)
+                #lcd.clear()
+                #lcd.print("Sensor count: " + countValueAsString)
+
+                
+                try:
+                    with open("/data.csv", "a") as datalog:
+                        time.sleep(1)
+
+                        time_elapsed = time.monotonic()
+                        countToSend = code.countValue
+                            
+                        datalog.write( f“{time_elapsed},{countToSend}\n”)
+                        datalog.flush()
+                        
+                        print("wrote to file!")
+
+
+    except RuntimeError:
+        ##print("Retrying!")
+        if debounce_Sensor == True:
+            debounce_Sensor = False
+        pass
+    time.sleep(0.02)
+    
