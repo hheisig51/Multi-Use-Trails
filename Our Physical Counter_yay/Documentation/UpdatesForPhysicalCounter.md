@@ -18,4 +18,6 @@ Week of 4/8/2024:
 Week of 4/15/2024:
 - Monday: I've gotten data mode and code mode switching to work. The issue now is getting the pico's drive to show up when being plugged in/booted. The solution to this seems to be flash_nuking the pico, reinstalling the .uf2 file, and putting back in code & library files.
    - Notes: counter should only be able to count data in data mode. Confirm the counter is in dataMode when collecting data. The 'as open .cvs' thing should make a file by itself. Will test more next class.
-- 
+
+Week of 4/22/2024:
+- Tuesday: I have a new Pico but it doesn't have a Boot Select button for resetting the board. And, I might've fried the Pico. The drive is not showing up when the board is plugged in. The Code or wiring could be wrong, not sure what currently. I have an LED that should tell me when the Pico is in Code or Data mode. 
