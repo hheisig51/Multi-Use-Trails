@@ -13,6 +13,7 @@ Problem: Lack of, or outdated, data on how Multi-Use Trails, specifically Triang
 Solution: Collect data on people's opinion's & usage of Triangle Trails.
 
 | # | Essential Requirements | Non-Essential Requirements |
+| - | ---------------------- | -------------------------- |
 | 1 | Collect data on when people use the trails | Take community survey |
 | 2 | Design and build sensors in-lab, keeping privacy in mind | Find out demographics of people who use the trails |
 | 3 | Find out use patterns of the trails | Add physical change to Triangle Trails |
