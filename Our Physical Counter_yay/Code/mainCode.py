@@ -15,6 +15,7 @@ import storage  # type: ignore
 debounce_Sensor = False
 countValue = 0
 sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.GP14, echo_pin=board.GP15)
+distanceFromSensor = 0
 # Most accurate to ~55cm, past that doesn't seem accurate.
 
 ### - LCD - ###
@@ -45,24 +46,12 @@ switch = digitalio.DigitalInOut(board.GP0)
 switch.direction = digitalio.Direction.INPUT
 switch.pull = digitalio.Pull.UP
 
-###time.sleep(4)
+# time.sleep(4)
 
 lcd.clear()
 lcd.print("Sensor count: " + str(countValue))
 print("code.py is running!")
 
-def a():
-    if distanceFromSensor >= 5 and distanceFromSensor <= 66:  # This is the range we want to collect data from
-           # print("mid range, add to count")
-            if debounce_Sensor == False:
-                # print("took input")
-                debounce_Sensor = True
-                countValue += 1
-                countValueAsString = str(countValue)
-
-                print(countValueAsString)
-                lcd.clear()
-                lcd.print("Sensor count: " + countValueAsString)
 
 def tryToWriteDataToFileFunc():
     try:
@@ -75,8 +64,8 @@ def tryToWriteDataToFileFunc():
             datalog.flush()
 
             print("wrote to file!")
-    except:
-        print("Couldn't write to file!")
+    except Exception as error_2:
+        print(error_2)
 
 
 while True:
@@ -97,13 +86,28 @@ while True:
             # print("Test button 2")
 
     try:
-        ##print(sonar)
+        # print(sonar)
         distanceFromSensor = sonar.distance
-        print((distanceFromSensor))
+        ##print((distanceFromSensor))
+        
+        if distanceFromSensor >= 5 and distanceFromSensor <= 66:  # This is the range we want to collect data from
+            # print("mid range, add to count")
+            if debounce_Sensor == False:
+                # print("took input")
+                debounce_Sensor = True
+                countValue += 1
+                countValueAsString = str(countValue)
 
-    except Exception as error:
+                print(countValueAsString)
+                lcd.clear()
+                lcd.print("Sensor count: " + countValueAsString)
+
+                ##tryToWriteDataToFileFunc()
+
+
+    except Exception as error_1:
         ##print("Retrying!")
-        print(error)
+        print(error_1)
         if debounce_Sensor == True:
             debounce_Sensor = False
         pass
