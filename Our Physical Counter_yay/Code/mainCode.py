@@ -98,8 +98,9 @@ while True:
                         datalog.flush()
                         
                         print("wrote to file!")
-                except:
+                except Exception as error:
                     print("Couldn't write to file!")
+                    print(error)
                     
 
     except Exception as error:
