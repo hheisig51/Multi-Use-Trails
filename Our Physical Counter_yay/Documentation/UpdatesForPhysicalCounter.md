@@ -22,3 +22,6 @@ Week of 4/15/2024:
 Week of 4/22/2024:
 - Tuesday: I have a new Pico but it doesn't have a Boot Select button for resetting the board. And, I might've fried the Pico. The drive is not showing up when the board is plugged in. The Code or wiring could be wrong, not sure what currently. I have an LED that should tell me when the Pico is in Code or Data mode.
 - 4/26/2024: I have another Pico, this one works fine. Writing to the csv file still doesn't work, but I learned more about the Ultra Sonic Sensor. When an object is at an angle, that can deflect the sonar pulse and thus the code will timeout and not count that as a count for the data. This is a limitation of the Ultra Sonic Sensor.
+
+Week of 4/29/2024:
+- Monday: a
