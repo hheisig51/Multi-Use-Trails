@@ -63,56 +63,59 @@ while True:
             countValueAsString = str(countValue)
             lcd.clear()
             lcd.print("Sensor count: " + countValueAsString)
-
+            
     elif resetButton.value == True:
         if resetButtonWasPressed == True:
             resetButtonWasPressed = False
             # print("Test button 2")
-
+            
     try:
         ##print(sonar)
         distanceFromSensor = sonar.distance
         ##print((distanceFromSensor))
-
+        
         if distanceFromSensor >= 5 and distanceFromSensor <= 66:  # This is the range we want to collect data from
-           # print("mid range, add to count")
+            ##print("mid range, add to count")
             if debounce_Sensor == False:
                 # print("took input")
                 debounce_Sensor = True
                 countValue += 1
                 countValueAsString = str(countValue)
-
-                ##print(countValueAsString)
+                
+                print(countValueAsString)
                 lcd.clear()
                 lcd.print("Sensor count: " + countValueAsString)
-
-                ##tryToWriteDataToFileFunc()
-
+                
                 try:
                     with open("/data.csv", "a") as datalog:
                         time.sleep(1)
-
+                        
                         time_elapsed = time.monotonic()
                         countToSend = countValue
                         datalog.write(f"{time_elapsed},{countToSend}\n")
                         datalog.flush()
-
+                        
                         lcd.clear()
                         lcd.print("Wrote to file!")
-
+                        
                         print("wrote to file!")
-                except Exception as error:
+                except Exception as error_2:
                     print("Couldn't write to file!")
-                    print(error)
-                    lcd.clear()
-                    lcd.print(error)
+                    ##print(error)
+                    
+                    ##lcd.clear()
+                    ##lcd.print(error)
 
 
-    except Exception as error:
+    except Exception as error_1:
         ##print("Retrying!")
-        ##print(error)
-        if debounce_Sensor == True:
-            debounce_Sensor = False
+        print(error_1)
+        
+        if str(error_1) == "Timed out":
+            if debounce_Sensor == True:
+                debounce_Sensor = False
+                
+        
         pass
 
     time.sleep(0.02)
