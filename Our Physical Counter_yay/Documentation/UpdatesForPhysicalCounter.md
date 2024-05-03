@@ -24,4 +24,4 @@ Week of 4/22/2024:
 - 4/26/2024: I have another Pico, this one works fine. Writing to the csv file still doesn't work, but I learned more about the Ultra Sonic Sensor. When an object is at an angle, that can deflect the sonar pulse and thus the code will timeout and not count that as a count for the data. This is a limitation of the Ultra Sonic Sensor.
 
 Week of 4/29/2024:
-- Monday: a
+- Friday: We finanally got the counter to work with writing code to the .csv file. Note to self: don't import code.py from boot.py and make sure to use 4.5 volts not 9 volts. The sensor can only take so many volts. Code files are updated.
