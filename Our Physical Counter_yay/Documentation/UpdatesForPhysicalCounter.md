@@ -25,3 +25,5 @@ Week of 4/22/2024:
 
 Week of 4/29/2024:
 - Friday: We finanally got the counter to work with writing code to the .csv file. Note to self: don't import code.py from boot.py and make sure to use 4.5 volts not 9 volts. The sensor can only take so many volts. Code files are updated.
+
+![image](https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/9d2351d0-24a3-49f0-81ef-91741d75d4cc)
