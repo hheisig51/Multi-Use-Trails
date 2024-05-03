@@ -3,7 +3,6 @@ import board #type:ignore
 import digitalio #type:ignore
 import storage #type:ignore
 import time #type:ignore
-import code #type:ignore
 
 switch = digitalio.DigitalInOut(board.GP0)
 switch.direction = digitalio.Direction.INPUT
