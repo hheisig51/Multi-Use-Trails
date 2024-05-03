@@ -53,8 +53,8 @@ print("code.py is running!")
 
 
 while True:
-    ##print(switch.value)
-    
+    ## print(switch.value)
+
     if resetButton.value == False:
         if resetButtonWasPressed == False:
             resetButtonWasPressed = True
@@ -70,9 +70,8 @@ while True:
             # print("Test button 2")
 
     try:
-        ##print(sonar)
+        # print(f"{sonar.distance}")
         distanceFromSensor = sonar.distance
-        ##print((distanceFromSensor))
 
         if distanceFromSensor >= 5 and distanceFromSensor <= 66:  # This is the range we want to collect data from
             ##print("mid range, add to count")
@@ -84,7 +83,7 @@ while True:
                 print(countValueAsString)
                 ##lcd.clear()
                 ##lcd.print("Sensor count: " + countValueAsString)
-                
+
                 try:
                     with open("/data.csv", "a") as datalog:
                         time.sleep(1)
@@ -95,7 +94,7 @@ while True:
                         lcd.clear()
                         lcd.print("Wrote to file!")
                         print("wrote to file!")
-                        
+
                 except Exception as error_2:
                     print("Couldn't write to file!")
                     ##print(error_2)
@@ -108,7 +107,7 @@ while True:
         if str(error_1) == "Timed out":
             if debounce_Sensor == True:
                 debounce_Sensor = False
-                
+
         pass
 
     time.sleep(0.02)
