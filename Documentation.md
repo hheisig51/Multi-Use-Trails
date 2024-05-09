@@ -21,8 +21,22 @@ Solution: Collect data on people's opinion's & usage of Triangle Trails.
 
 ### Timeline
 
-Weeks 1-3: Research how to collect data, order parts 
-Weeks 4-7: Build and test data collection system
-Weeks 8-16: Collect, organize, and interpret data
-Weeks 17-22: Draw larger conclusions with guidance from experts
-Weeks 23-24: Prepare for final presentation
+- Weeks 1-3: Research how to collect data, order parts 
+- Weeks 4-7: Build and test data collection system
+- Weeks 8-16: Collect, organize, and interpret data
+- Weeks 17-22: Draw larger conclusions with guidance from experts
+- Weeks 23-24: Prepare for final presentation
+
+### Deliverable
+
+### Inspiration
+
+### Proposal
+
+## Survey
+
+### Surveys
+
+### Responses
+
+### Analysis
