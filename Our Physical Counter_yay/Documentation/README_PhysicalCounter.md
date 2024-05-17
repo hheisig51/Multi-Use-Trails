@@ -7,13 +7,14 @@
 ## Table of Contents
 * [Intro](#Introduction)
 * [Materials](#List-of-Materials)
-* [Important](#Important-Links)
+* [Important Links](#Important-Links)
 * [Operating Instructions](#Operating-Instructions)
+* [Wiring Diagram](#Wiring-Diagram)
 
 
 ---
 
-### Introduction
+## Introduction
 
 <img src="https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/c9510029-bf4e-48e2-b448-e285bddba955" width="400" height="400">
 
@@ -28,7 +29,7 @@ Following this, here's a list of our essentials for a counter:
 
 ---
 
-### List of Materials
+## List of Materials
 |Name |Quantity |
 |--- | --- |
 | LCD w/ I2C Backpack | 1 |
@@ -46,7 +47,7 @@ Following this, here's a list of our essentials for a counter:
 
 ---
 
-### Important Links
+## Important Links
 
 Additional Updates:
 [https://github.com/hheisig51/Multi-Use-Trails/blob/main/Our%20Physical%20Counter/Code/Documentation/UpdatesForPhysicalCounter.md
@@ -62,7 +63,7 @@ Link to Code:
 
 ---
 
-### Wiring Diagram
+## Wiring Diagram
 
 <img src="https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/ef41d745-08f2-44da-bb5d-06930be7f529" width="655" height="362">
 
@@ -73,7 +74,7 @@ Link to Code:
 <img src="https://github.com/hheisig51/Multi-Use-Trails/assets/71342159/e9c71b26-78bb-44f9-b2a1-392d663888fc" width="550" height="500">
 
 
-###  Operating Instructions
+##  Operating Instructions
 
 **General:**
 
