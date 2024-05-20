@@ -31,10 +31,9 @@ Solution: Collect data on people's opinion's & usage of Triangle Trails.
 
 The documentation for the deliverable can be found [here under the Our-Physical-Counter-yay folder](Our-Physical-Counter-yay/Documentation/README_PhysicalCounter.md)
 
-### Proposal
+### Slideshows
 
-A .pdf and .pptx copy of our proposal can be found [here](placeholder)
-
-## Final Presentation
-
-A .pdf and .pptx copy of our final presentation can be found [here](placeholder)
+|  | .PDF | .PPTX |
+| - | ---------------------- | -------------------------- |
+| Proposal | [slideshows/Engineering Proposal Presentation - Logan Martin and Emma Heisig .pdf](slideshows/Engineering Proposal Presentation - Logan Martin and Emma Heisig .pdf) | Take community survey |
+| Presentation | [Capstone Final Presentation - Logan & Emma.pdf](slideshows/Capstone Final Presentation - Logan & Emma.pdf) | [Capstone Final Presentation - Logan & Emma.pptx](slideshows/Capstone Final Presentation - Logan & Emma.pptx) |
