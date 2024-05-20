@@ -35,5 +35,5 @@ The documentation for the deliverable can be found [here under the Our-Physical-
 
 |  | .PDF | .PPTX |
 | - | ---------------------- | -------------------------- |
-| Proposal | [slideshows/Engineering Proposal Presentation - Logan Martin and Emma Heisig .pdf](slideshows/Engineering Proposal Presentation - Logan Martin and Emma Heisig .pdf) | Take community survey |
-| Presentation | [Capstone Final Presentation - Logan & Emma.pdf](slideshows/Capstone Final Presentation - Logan & Emma.pdf) | [Capstone Final Presentation - Logan & Emma.pptx](slideshows/Capstone Final Presentation - Logan & Emma.pptx) |
+| Proposal | [Proposal.pdf](slideshows/Proposal.pdf) | [Proposal.pptx](slideshows/Proposal.pptx) |
+| Presentation | [Final.pdf](slideshows/Final.pdf) | [Final.pptx](slideshows/Final.pptx) |
