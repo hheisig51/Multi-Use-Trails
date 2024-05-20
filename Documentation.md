@@ -29,14 +29,12 @@ Solution: Collect data on people's opinion's & usage of Triangle Trails.
 
 ### Deliverable
 
-### Inspiration
+The documentation for the deliverable can be found [here under the Our-Physical-Counter-yay folder](Our-Physical-Counter-yay/Documentation/README_PhysicalCounter.md)
 
 ### Proposal
 
-## Survey
+A .pdf and .pptx copy of our proposal can be found [here](placeholder)
 
-### Surveys
+## Final Presentation
 
-### Responses
-
-### Analysis
+A .pdf and .pptx copy of our final presentation can be found [here](placeholder)
