@@ -43,7 +43,7 @@ Solution: Collect data on people's opinion's & usage of Triangle Trails.
 
 ### Deliverable
 
-The documentation for the deliverable can be found [here under the Our-Physical-Counter-yay folder](Our-Physical-Counter-yay/Documentation/README_PhysicalCounter.md)
+The documentation for the deliverable can be found [here under the Our-Physical-Counter-yay folder](Our-Physical-Counter-yay/Documentation/README_PhysicalCounter.md) As a side note, we also collected data on biking and walking need of our high school. That data is for local people only, and we wouldn't want to make that public because it contains more personal information.
 
 ### Slideshows
 
